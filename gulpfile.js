@@ -2,7 +2,6 @@ const gulp = require('gulp'),
   browserSync = require('browser-sync').create(),
   sass = require('gulp-sass');
   tinypng = require('gulp-tinypng-compress'),
-  deploy = require('gulp-gh-pages');
 
 // Sass Task
 gulp.task('sass', function() {
@@ -25,10 +24,6 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task('deploy', function () {
-  gulp.src("./**/*")
-      .pipe(deploy());
-});
 
 // Serve Task
 gulp.task('serve', ['sass', 'image'], function() {
