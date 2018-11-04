@@ -25,17 +25,17 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
-// Netlify
-gulp.task('deploy', function () {
-  gulp.src('./public/**/*')
-    .pipe(netlify({
-      site_id: '1461a221-a1d3-4588-9545-5c8fc9ca3320',
-      access_token: '2ce68af73b145a6aa86ccc51296b680edc8a053ddac3e9ee14c1edfce08d27d3'
-    }))
-})
+// Heroku
+gulp.task('serveprod', function() {
+  connect.server({
+    root: '/Users/jonathanhaines/Desktop/Code/2018/constructiveco',
+    port: process.env.PORT || 5000, // localhost:5000
+    livereload: false
+  });
+});
 
 // Serve Task
-gulp.task('serve', ['sass', 'image', 'deploy'], function() {
+gulp.task('serve', ['sass', 'image'], function() {
   browserSync.init({
     server: './src'
   });
