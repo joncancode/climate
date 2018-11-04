@@ -1,3 +1,11 @@
+## Netlify site
+
+Site is live at 
+
+```
+https://xenodochial-mirzakhani-9a9004.netlify.com/
+```
+
 ## Installation instructions
 
 To run, you'll need to install Node and NPM
