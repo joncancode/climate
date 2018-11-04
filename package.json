@@ -14,5 +14,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-tinypng-compress": "^1.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-netlify": "^1.1.0"
+  }
 }
