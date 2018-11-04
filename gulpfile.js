@@ -35,7 +35,7 @@ gulp.task('deploy', function () {
 })
 
 // Serve Task
-gulp.task('serve', ['sass', 'image'], function() {
+gulp.task('serve', ['sass', 'image', 'deploy'], function() {
   browserSync.init({
     server: './src'
   });
