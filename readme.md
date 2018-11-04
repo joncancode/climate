@@ -40,8 +40,6 @@ The azo-sans-web fonts that were initially in the zip file were then made into m
 
 SCSS was used to preprocess the CSS
 
-There is no js file, but the site uses Node, in addition to a few npm packages (mentioned earlier in this readme file)
-
 The page is also responsive, able to be displayed on a smaller screen (tablet, phone) with its top nav bar becoming vertical under 768px. The footer was left alone, as it is still presentable at under 768px. 
 
 All links were given distinct styles upon hovering. While they are all workable links, they currently do not go anywhere.
