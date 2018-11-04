@@ -1,9 +1,5 @@
-@import 'variables';
 @import 'mixins';
-
-// .wrapper {
-//   width: 95%;
-// }
+@import 'variables';
 
 #main-banner {
   color: white;
@@ -40,7 +36,7 @@
   }
 
   a:hover {
-    color: gray;
+    color: $hover-color;
     transition-delay: 200ms;
     text-decoration: underline;
   }
@@ -65,7 +61,7 @@
   }
 
   select:hover {
-    border: 1px solid gray;
+    border: 1px solid $hover-color;
     transition-delay: 200ms;
   }
 
@@ -90,7 +86,7 @@
 
   h2 {
     @include azo-sans-bold;
-    font-size: 48px;
+    font-size: 42px;
   }
 }
 
@@ -120,7 +116,9 @@
     position: relative;
     left: 80px;
     width: 80%;
+    color: $dark-text;
   }
+
   .icon-text {
     @include azo-sans-light;
     color: gray;
@@ -129,6 +127,7 @@
     padding-bottom: 30px;
     width: 80%;
   }
+  
   hr {
     width: 75%;
   }
@@ -143,6 +142,7 @@
 .focus-heading {
   padding: 20px 0px 40px 60px;
   width: 50%;
+  color: $dark-text;
 }
 
 .box-group {
@@ -167,12 +167,12 @@ footer {
   }
   a {
     text-decoration: none;
-    color: black;
+    color: $dark-text;
     -webkit-transition: 200ms ease-in;
   }
 
   a:hover {
-    color: gray;
+    color: $hover-color;
     transition-delay: 200ms;
     text-decoration: underline;
   }
@@ -193,7 +193,7 @@ footer {
 @media only screen and (max-width: 768px) {
   #main-banner {
     h2 {
-      font-size: 32px;
+      font-size: 32px;  
     }
 
     p {
@@ -231,6 +231,11 @@ footer {
       position: relative;
       right: 40px;
       font-size: 20px;
+    }
+  }
+  #footer {
+    i {
+      margin-left: 10px;
     }
   }
 }

@@ -25,7 +25,7 @@
     bottom: 30px;
     -webkit-transition: 200ms ease-in; }
   #main-banner a:hover {
-    color: gray;
+    color: #239BAA;
     transition-delay: 200ms;
     text-decoration: underline; }
   #main-banner .nav-options-select {
@@ -42,7 +42,7 @@
     bottom: 30px;
     -webkit-transition: 200ms ease-in; }
   #main-banner select:hover {
-    border: 1px solid gray;
+    border: 1px solid #239BAA;
     transition-delay: 200ms; }
   #main-banner select:focus {
     outline: none; }
@@ -64,7 +64,7 @@
     font-family: azo-sans-web, sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 48px; }
+    font-size: 42px; }
 
 #overview {
   font-family: azo-sans-web, sans-serif;
@@ -91,7 +91,8 @@
   font-weight: 700;
   position: relative;
   left: 80px;
-  width: 80%; }
+  width: 80%;
+  color: #404B4D; }
 
 .icon-group .icon-text {
   font-family: azo-sans-web, sans-serif;
@@ -115,7 +116,8 @@
 
 .focus-heading {
   padding: 20px 0px 40px 60px;
-  width: 50%; }
+  width: 50%;
+  color: #404B4D; }
 
 .box-group {
   font-family: azo-sans-web, sans-serif;
@@ -168,10 +170,10 @@ footer {
     padding: 10px; }
   footer a {
     text-decoration: none;
-    color: black;
+    color: #404B4D;
     -webkit-transition: 200ms ease-in; }
   footer a:hover {
-    color: gray;
+    color: #239BAA;
     transition-delay: 200ms;
     text-decoration: underline; }
   footer i {
@@ -210,4 +212,6 @@ footer {
     clear: both;
     position: relative;
     right: 40px;
-    font-size: 20px; } }
+    font-size: 20px; }
+  #footer i {
+    margin-left: 10px; } }
