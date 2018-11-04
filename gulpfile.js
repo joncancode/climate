@@ -2,7 +2,7 @@ const gulp = require('gulp'),
   browserSync = require('browser-sync').create(),
   sass = require('gulp-sass');
   tinypng = require('gulp-tinypng-compress'),
-  netlify = require('gulp-netlify')
+  deploy = require('gulp-gh-pages');
 
 // Sass Task
 gulp.task('sass', function() {
@@ -25,13 +25,9 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
-// Heroku
-gulp.task('serveprod', function() {
-  connect.server({
-    root: '/Users/jonathanhaines/Desktop/Code/2018/constructiveco',
-    port: process.env.PORT || 5000, // localhost:5000
-    livereload: false
-  });
+gulp.task('deploy', function () {
+  gulp.src("./**/*")
+      .pipe(deploy());
 });
 
 // Serve Task

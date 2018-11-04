@@ -12,10 +12,9 @@
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-sass": "^4.0.2",
     "gulp-tinypng-compress": "^1.2.1"
   },
-  "dependencies": {
-    "gulp-netlify": "^1.1.0"
-  }
+  "dependencies": {}
 }
